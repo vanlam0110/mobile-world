@@ -1,0 +1,148 @@
+#cart {
+
+}
+
+#sum-content .box-contents-cart {
+    float: left;
+    width: 65%;
+    padding: 0px 10px;
+    margin-left: 16px;
+    border: 1px solid rgb(0, 0, 0,0.2);
+}
+
+.box-contents-cart .cart-icont-list {
+    color: #3e993e;
+    padding: 40px 20px 20px 0px;
+    font-size: 18px;
+    float: left;
+}
+
+.box-contents-cart .cart-icont-list i {
+    border: 1px solid #3e993e;
+}
+
+.box-contents-cart .img-cart {
+    float: left;
+    padding: 15px 0px 20px;
+}
+
+.box-contents-cart .img-cart img {
+    padding: 5px;
+}
+
+.box-contents-cart .cart-sub-sp {
+    width: 203px;
+}
+
+.box-contents-cart  .cart-sum-gia,
+.box-contents-cart  .cart-SL,
+.box-contents-cart .cart-sub-sp {
+    color: #3e993e;
+    height: 115px;
+    padding: 5px 0px 15px;
+    font-size: 18px;
+    float: left;
+    margin: 10px 10px;
+}
+
+.box-contents-cart .cart-sub-sp .cart-name-sp {
+    font-size: 20px;
+    color: #344655;
+    height: 54px;
+    margin-bottom: 3px;
+    padding-right: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.box-contents-cart .cart-sub-sp span {
+    font-size: 14px;
+    color: #3e993e;
+    font-weight: bold;
+}
+
+
+.box-contents-cart  .cart-sum-gia span,
+.box-contents-cart  .cart-SL span {
+    color: #8e9aa2;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+}
+
+.box-contents-cart  .cart-SL input {
+    padding: 9px 0px;
+    text-align: center;
+    color: #8e9aa2;
+    width: 72px;
+    border: 1px solid rgb(0, 0, 0,0.2);
+}
+
+.box-contents-cart  .cart-sum-gia .cart-gia {
+    font-size: 20px;
+    color: #344655;
+}
+
+#sum-content .cart-collum-gia {
+    float: right;
+    width: 25%;
+    margin-right: 48px;
+    border: 1px solid rgb(0, 0, 0,0.2);
+    padding: 30px 13px;
+    text-align: center;
+}
+
+#sum-content .cart-collum-title input {
+    margin-bottom: 5px;
+    padding: 11px 9px;
+    color: #3e993e;
+    font-weight: bold;
+    border: 1px solid #8e9aa2;
+}
+
+#sum-content .cart-collum-du-kien-gia {
+    padding: 10px 0px;
+    border-bottom: 2px solid #eaebec;
+}
+
+.cart-collum-du-kien-gia .sub-gia {
+    color: #3e993e;
+    font-size: 18px;
+}
+
+.cart-collum-du-kien-gia .collum-gia {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 19px;
+    color: #344655;
+}
+
+#sum-content .cart-collum-sum-gia {
+    padding: 30px 13px;
+}
+
+#sum-content .cart-collum-sum-gia span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#sum-content .cart-collum-sum-gia span:first-child {
+    padding-right: 15px;
+}
+
+#sum-content .dat-hang input,
+#sum-content .gio-hang input {
+    background-color: #3e993e;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#sum-content .dat-hang input {
+    background-color: #e8bc20;
+}

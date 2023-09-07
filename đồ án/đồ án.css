@@ -1,0 +1,1354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    text-align: center;
+    background-color: rgb(239,75,113);
+    height: 44px;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+/*------------------------nav---------------------------*/
+nav{
+    background-color: black;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li,a{
+    color: white;
+    font-size: 12px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav ul li:nth-child(2) i{
+    color: yellow;
+    font-size: 15px;
+    margin-left: 6px;
+}
+nav ul li:nth-child(2) a{
+    color: yellow;
+}
+nav ul li:nth-child(3) input{
+    height: 30px;
+    width: 189.44px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+nav ul li:nth-child(3){
+    position: relative;
+}
+nav ul li:nth-child(3) i{
+    position: absolute;
+    font-size: 17px;
+    right: 12px;
+    color: black;
+    line-height: 30px;
+    cursor: pointer;
+}
+nav ul li:nth-child(4) button{
+    height: 30px;
+    padding: 5px 8px;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    border: 1px solid #8f8f8f;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+nav ul li:nth-child(4) button i{
+    margin-right: 6px;
+}
+nav ul li:nth-child(4) button:hover{
+    background-color: #8f8f8f;;
+}
+nav ul li:nth-child(5):hover a {
+    color: yellow;
+}
+nav ul li:nth-child(5){
+    text-align: center;
+}
+.daucham{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: yellow;
+    display: block;
+    float: left;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+.chamvang{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: yellow;
+    display: block;
+    pointer-events: none;
+    animation: dauchamvang 2s linear infinite;
+}
+@keyframes dauchamvang{
+    form{
+        opacity: 0.4;
+    }
+    to{
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+nav ul li:nth-child(6) a{
+    color: yellow;
+}
+nav ul li:nth-child(7):hover a{
+    color: yellow;
+}
+nav ul li:nth-child(8):hover a{
+    color: yellow;
+}
+nav ul li:nth-child(9):hover a{
+    color: yellow;
+}
+/*---------------------menu ở dòng 3-----------------*/
+.menu2{
+    background-color: #FED100;
+}
+.menu2 ul{
+    display: flex;
+    justify-content: space-between;
+}
+.menu2 ul li a{
+    color: black;
+    font-size: 13px;
+}
+.menu2 ul li a i{
+    margin-right: 6px;
+    font-size: 16px;
+}
+.menu2phu > ul > li{
+    padding: 12px 6px;
+}
+.menu2 ul li:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.menu2phu > ul > li:nth-child(9) {
+    position: relative;
+}
+.menu2phu > ul > li:nth-child(9):before{
+    position: absolute;
+    content: "Giảm 5%";
+    display: block;
+    height: 15px;
+    width: 45px;
+    background-color: #f51212;
+    border-radius: 5px;
+    right: -20px;
+    top: 2px;
+    z-index: 2;
+    font-size: 10px;
+    padding-left: 3px;
+    color: white;
+}
+.menu2phu > ul > li:nth-child(9)::after{
+    position: absolute;
+    content: "";
+    background-color: #f51212;
+    height: 7px;
+    width: 7px;
+    display: block;
+    top: 14px;
+    right: 10px;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+/*--------------form nhận hàng-------*/
+.menucon{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 999;
+    display: none;
+}
+.menuconphu{
+    width: 480px;
+    height: 450px;
+    background-color: white;
+    border-radius: 5px;
+}
+.menuconphu p{
+    margin-top: 25px;
+    color: black;
+    font-size: 14px;
+}
+.menuconphu form{
+    padding: 0 40px;
+}
+.menuconphu h2{
+    font-size: 15px;
+    padding: 12px 0; 
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    color: black;
+}
+.menuconphu h2 span{
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #ddd;
+    right: 12px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    color: #333333;
+    border-radius : 5px; 
+}
+.menuconphu form input , select {
+    height: 45px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius : 5px;
+}
+.menuconphu form button{
+    margin-top: 20px;
+    height: 42.8px;
+    width: 347.4px;
+    cursor: pointer;
+    background-color: #f97e0e;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+/*---------------menuphukien--------------*/
+.menu2phu ul li {
+    position: relative;
+}
+.menuphukien {
+    position: absolute;
+    background-color: white;
+    width: 800px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    display: none;
+    z-index: 10;
+}
+.menuphukien ul {
+    display: flex;
+    flex-direction: column;
+}
+.menuphukien ul li{
+    padding: 6px 0;
+}
+.menuphukien ul li:hover a{
+    color: blue;
+}
+.menuphukien ul li:hover {
+    background: none;
+}
+.menu2phu ul li:hover .menuphukien{
+    display: block;
+}
+.menuphukien ul li b{
+    border-bottom:1px solid black ;
+}
+.didong{
+    float: left;
+}
+.laptop{
+    float: left;
+    margin-left: 125px;
+}
+.thuonghieu{
+    float:right;
+}
+/* ----------------------AVAJI------------------------- */
+.avaji ul li{
+    position: relative;
+}
+.avaji{
+    position: absolute;
+    background-color: white;
+    width: 150px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    z-index: 10;
+    display: none;
+}
+.avaji ul{
+    display: flex;
+    flex-direction: column;
+}
+.avaji ul li{
+    padding: 6px 0;
+}
+.avaji ul li:hover a{
+    color: blue;
+}
+.avaji ul li:hover {
+    background: none;
+}
+.menu2phu ul li:hover .avaji{
+    display: block;
+}
+/* ----------------------------PC--------------------------- */
+.pc ul li{
+    position: relative;
+}
+.pc{
+    position: absolute;
+    background-color: white;
+    width: 150px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    z-index: 10;
+    display: none;
+}
+.pc ul{
+    display: flex;
+    flex-direction: column;
+}
+.pc ul li{
+    padding: 6px 0;
+}
+.pc ul li:hover a{
+    color: blue;
+}
+.pc ul li:hover {
+    background: none;
+}
+.menu2phu ul li:hover .pc{
+    display: block;
+}
+/* --------------------------slider-------------------------- */
+.slider{
+    padding: 20px 0;
+    height: 215px;
+}
+.slideranh{
+    display: flex;
+    justify-content: space-between;
+}
+.slidertrai{
+    width: 70%;
+    overflow: hidden;
+}
+.slidertrai2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 0.3 ease;
+}
+.sliderphai{  
+    width: 35%; 
+    flex-wrap: wrap;
+    padding: 0;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+.sliderphai img{
+    width: 100%;
+    max-height: 100%;
+}
+.iconslider{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.iconslider i{
+    color: #333333;
+    font-size: 32px;
+    height: 50px;
+    width: 25px;
+    background-color: #ffffffe6;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.slidertrai2 img{
+    width: 100%;
+    position: absolute;
+}
+.slidertrai2 a:nth-child(2) img{  
+    transform: translateX(100%);
+    transition: all 0.3 ease;
+}
+.slidertrai2 a:nth-child(3) img{  
+    transform: translateX(200%);
+}
+.slidertrai2 a:nth-child(4) img{  
+    transform: translateX(300%);
+}
+.slidertrai2 a:nth-child(5) img{  
+    transform: translateX(400%);
+}
+.sliderchuyendoi{
+    position: relative;
+}
+.sliderchuyendoi:hover i {
+    opacity: 1;
+}
+/* -------------------bộ lọc---------------------- */
+.boloc ul li a{  
+    color: black;
+    text-align: center;
+    font-size: 14px;
+}
+.boloc{
+    position: relative;
+    padding-top: 20px;
+    align-items: center;
+}
+.boloc ul{
+    display: flex;
+    justify-content: space-between;
+}
+.boloc i{
+    margin-left: 5px;
+}
+.bolocfull{
+    display: inline-block;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 20px;
+}
+/* ----------------------------HÃNG -------------------------- */
+.bolocdienthoai{
+    position: relative;
+    padding-top: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.dienthoai ul{
+    display: flex;
+}
+.hang{
+    display: inline-block;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 52px;
+    cursor: pointer;
+    padding: 8px 20px;
+}
+.dienthoai img{
+    width: 92px;
+    height: 20px;
+}
+.dienthoai ul li:hover{
+    border-color: rgb(0, 132, 255);
+}
+/* -------------------KHUNG HÌNH ĐIỆN THOẠI---------------- */
+.khunghinh{
+    background-color: #FFBF00;
+    padding: 12px;
+    cursor: pointer;
+}
+.khunghinhpk{  
+    background-color: #FFE200!important;
+    padding: 12px;
+    cursor: pointer;
+}
+.khunghinhdh{
+    background-color: #fb6e2e;
+    padding: 12px;
+    cursor: pointer;
+}
+.khunghinhanh{
+    display: flex;
+    justify-content: space-evenly;
+}
+.hinhanhdienthoai{
+    width: 19%;
+    background-color: white;
+    padding: 50px 12px 12px;
+    border-left: 1px solid #ddd;
+}
+.hinhanhdienthoai> a img{
+    width: 100%;
+    transition: all 0.4s ease;
+    padding-bottom: 20px;
+}
+.hinhanhdienthoai li{
+    list-style: none;
+    margin-bottom: 6px;
+}
+.hinhanhdienthoai:hover > a img{
+    transform:translateY(-20px) ;
+}
+.hinhanhdienthoai li:nth-child(2):hover{
+    color: blue;
+}
+.hinhanhdienthoai li:last-child i{
+    color: #fb6e2e;
+    font-size: 13px;
+}
+/* ------------------------ NỔI BẬT---------------- */
+.noibat{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.noibat h2{
+    justify-content: space-between;
+    float: left;
+}
+.noibat ul li a{
+    color: black;
+}
+.noibat ul{
+    display: flex;
+    text-align: right;
+    float: right;
+}
+.noibat ul li{
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    margin-left: 12px;
+    border-radius: 40px;
+}
+.noibat ul li:hover a{
+    color: #288ad6;
+}
+/* ---------------------------KHUNG ĐỒNG HỒ------------------ */
+.khungdongho{
+    margin-top: 30px;
+}
+.dongho{
+    display: flex;
+    padding-right: 12px;
+    background-color: #003743;
+    padding-bottom: 12px;
+}
+.dongtraitrai {
+    width: 20%;
+}
+.donghotrai img {
+    width: 100%;
+}
+.donghophai {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.donghophaichu {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    color: #ddd;
+ }
+.donghophai li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    list-style: none;
+    width: 100%;
+}
+.donghophaichu .active {
+    background-color: #fff;
+    color: #203E4E ;
+ }
+ .donghophaichu li{
+    padding: 8px 12px;
+ }
+.donghophaichu li:last-child {
+    border: none;
+ }
+.donghophaichu li:last-child a {
+    font-size: 16px;
+ } 
+.donghophaichu li:last-child i{
+    margin-right: 3px;
+}
+.donghoanhtrai {
+    background-color: #fff;
+    display: flex;
+    border-radius: 5px;
+}
+.donghoanhphai {
+    width: 25%;
+    padding: 50px 20px 20px;
+    border-right: 1px solid #ddd;
+}
+.donghoanhphai li{
+    border: none;
+}
+.donghoanhphai a img {
+    width: 100%;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.donghoanhphai i{
+    color: #fb6e2e;
+    font-size: 13px;
+}
+.donghoanhphai :hover img{
+    transform:translateY(-20px) ;
+}
+.donghoanhphais li{
+    border: none;
+    padding-bottom: 2px;
+}
+/* -----------------------------MẮT KÍNH------------------ */
+.nhan{
+    display: flex;
+    padding-right: 12px;
+    background-color:  #831713;
+    padding-bottom: 12px;
+}
+/* -------------------------NHẪN --------------------- */
+.matkinh{
+    display: flex;
+    padding-right: 12px;
+    background-color:  #370D02;
+    padding-bottom: 12px;
+}
+/* ----------------------------SẢN PHẨM---------------------- */
+.sanphamall{
+    padding-bottom: 0;
+}
+.sanphamphu li{
+    list-style: none;
+}
+.sanpham{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sanphamphu:hover > a img{
+    transform:translateY(-20px) ;
+}
+.sanphamphu{  
+    width: 20%;
+    padding: 50px 12px 12px;
+    cursor: pointer;
+    border-left: 1px solid #f1f1f1;
+    border-top: 1px solid #f1f1f1;
+}
+.sanphamphu > a img{
+    width: 100%;
+    transition: all 0.4s ease;
+    padding-bottom: 20px;
+}
+.sanphamphu li{
+    margin-bottom: 6px;
+}
+.sanphamphu li:last-child i{
+    color: #fb6e2e;
+    font-size: 13px;
+}
+.sanphamphu li:nth-child(2):hover{
+    color: blue;
+}
+.iconsanpham li {
+    height: 26px;
+    width: 65%;
+    background-color: #288ad6;
+    border-radius: 52px;
+    align-items: center;
+    line-height: 30px;
+}
+.iconsanpham li p{
+    color: white;
+    font-size: 10px;
+}
+.iconsanpham li img{
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 6px ; 
+}
+.iconsanphams li {
+    height: 26px;
+    width: 65%;
+    background: linear-gradient(to right,#ef3006,#c60004);
+    border-radius: 52px;
+    align-items: center;
+    line-height: 30px;
+}
+.iconsanphams li p{
+    color: white;
+    font-size: 10px;
+}
+.iconsanphams li img{
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 6px ; 
+}
+.iconsanphamtim li {
+    height: 26px;
+    width: 75%;
+    background: linear-gradient(to right,#af63cf,#3327a7);
+    border-radius: 52px;
+    align-items: center;
+    line-height: 30px;
+}
+.iconsanphamtim li p{
+    color: white;
+    font-size: 10px;
+}
+.iconsanphamtim li img{
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 6px ; 
+}
+.iconsanphamcam li {
+    height: 26px;
+    width: 75%;
+    background: linear-gradient(to right,#ef3006,#c60004);
+    border-radius: 52px;
+    align-items: center;
+    line-height: 30px;
+}
+.iconsanphamcam li p{
+    color: white;
+    font-size: 10px;
+}
+.iconsanphamcam li img{
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 6px ; 
+}
+.iconsanphamcams li {
+    height: 26px;
+    width: 80%;
+    background: linear-gradient(to right,#faab08,#d42611);
+    border-radius: 52px;
+    align-items: center;
+    line-height: 30px;
+}
+.iconsanphamcams li p{
+    color: white;
+    font-size: 10px;
+}
+.iconsanphamcams li img{
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 6px ; 
+}
+.iconsanphamhong li {
+    height: 26px;
+    width: 65%;
+    background: linear-gradient(to right,#e91f63,#db2663);
+    border-radius: 52px;
+    align-items: center;
+    line-height: 30px;
+}
+.iconsanphamhong li p{
+    color: white;
+    font-size: 10px;
+}
+.iconsanphamhong li img{
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 6px ; 
+}
+.maudo li {
+    height: 24px;
+    width: 60%;
+    background-color: #e91e63;
+    border-radius: 4px;
+    align-items: center;
+    line-height: 30px;
+    text-align: center;
+}
+.maudo li p{
+    color: white;
+    font-size: 10px;
+}
+.sanphamall a:last-child{
+    box-shadow: 0 0 20px ;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 4px;
+    color: #333;
+    display: block;
+    line-height: 18px;
+    margin: 20px auto 0;
+    max-width: 350px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;  
+    font-size: 13px;
+}
+/* -----------------------------TIÊU ĐỀ CHI TIẾT--------------------- */
+.chitietsp{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.chitietsp h2{
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.chitietsp h4{
+    font-size: 13px;
+    display: inline-block;
+    color: #2f80ed;
+    vertical-align: bottom;
+    margin-bottom: 2px;
+}
+.chitietsp li {
+    padding: 0 10px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 16px;
+    min-width: 100px;
+}
+.chitietsp li i{
+    color: #fb6e2e;
+    font-size: 12px;
+}
+.fb-like{
+    float: right;
+}
+/*---------------------CHI TIẾT SẢN PHẨM-----------------------------  */
+.chitietsps{
+    padding-top: 20px;   
+}
+.chitietsps img{
+    float: left;
+    width: 710px;
+    height: 394px;
+}
+.chitietsps ul li{
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 13px;
+    min-width: 67px;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 2px;
+    height: 36px;
+    line-height: 36px;
+}
+.chitietsps a{
+    font-size: 13px;
+    color: black;
+}
+.chitietsps h2{
+    font-size:20px ;
+    color: #d0021c;
+    font-weight: bold;
+    display: inline-block;
+}
+.chitietsps span{
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    margin-right: 10px;
+    padding: 3px 8px;
+}
+.chitietspkm{
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    display: inline-block;
+    width: 400px;   
+}
+.khuyenmai{
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 8px 10px;
+}
+.khuyenmai h4{
+    font-size: 14px;
+}
+.khuyenmai p{
+    color: #666;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-top: 5px;
+    font-style: normal;
+}
+.quakm{
+    padding: 15px 10px 10px 10px;
+}
+.qua p{
+    display: inline-block;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+.qua i{
+    font-size: 13px;
+    color: #999;
+    font-style: normal;
+}
+.mua{
+    display: block;
+    background-color: #fb6e2e;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    padding: 14px 160px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 90px;
+    margin-top: 10px;
+}
+.muatragop{
+    display: block;
+    background-color: #2f80ed;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    padding: 7px 134px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 90px;
+}
+.muatragop p{
+    font-size: 12px;
+
+}
+.chitietsps h1{
+    float: left;
+    padding-top: 100px;
+}
+/* -------------------CẤU HÌNH----------------------- */
+table, th, td{
+    border-top:1px solid #f5f5f5;
+    border-bottom:1px solid #f5f5f5;
+}
+table{
+    border-collapse:collapse;
+    width:50%;
+}
+ td{
+    text-align:left;
+    padding:10px;
+    
+}
+tr:nth-child(1){
+  background-color: #f5f5f5;
+}
+tr:nth-child(3){
+  background-color: #f5f5f5;
+}
+tr:nth-child(5){
+  background-color: #f5f5f5;
+}
+tr:nth-child(7){
+  background-color: #f5f5f5;
+}
+
+tr:nth-child(9){
+  background-color: #f5f5f5;
+}
+/* -------------------------------THÔNG TIN SẢN PHẨM------------------- */
+.thongtin h2{
+    float: left;
+    padding-top: 30px;
+}
+.thongtin h3 a{  
+    color: #2f80ed;
+    font-size: 18px;
+}
+.thongtin h3{ 
+    float: left;
+    padding-top: 20px;
+    font-weight: bold;
+    line-height: 28px;   
+}
+.thongtin img{
+    width: 40%;
+    float: right;
+}
+.thongtin ul li a{
+    border: 1px solid #2f80ed;
+    border-radius: 5px;
+    color: #2f80ed;
+    display: block;
+    max-width: 340px;
+    padding: 10px 100px;
+    text-align: center;
+    float: left;
+    margin-top: 15px;
+    margin-left: 100px;
+}
+.thongtin i{
+    margin-left: 4px;
+    margin-top: 5px;
+}
+.phukienmuacung {
+    clear: both;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.phukienmuacung h2{
+    padding-bottom: 20px;
+}
+/* ---------------------FOOTER----------------------- */
+.footer{
+    margin-top: 20px;
+    display: block;
+    border-top: 1px solid #e2e2e2;  
+}
+.footertop{
+    padding: 15px 0 5px;
+    padding-bottom: 170px;
+}
+.footertop1{
+    float: left;
+    width: 24%;
+}
+.footertop1 ul li a{
+    color: black;
+    font-size: 16px;
+    line-height: 30px;
+}
+.footertop1:nth-child(3){
+    width: 23%;
+}
+.footertop1 a:hover {
+    color: #288ad6;
+}
+.footertop1:nth-child(4){
+    width: 29%;
+}
+.footerlast{
+    margin-bottom: 20px;
+}
+.footerlast i{
+    color: #2f80ed;   
+}
+.footerlast a{
+    color: #2f80ed;
+    font-size: 16px;
+}
+.tapdoan{
+    margin-left: 50px ;
+}
+.tapdoan img{
+    margin-top: 15px ;
+    height: 100px;
+    width: 300px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 250px 82px;
+}
+.footerbotom{
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.footerbotom p{
+    color: #666;
+    font-size: 13px;
+}
+.footerbotom a{
+    color: #288ad6;
+}
+/* ---------------------------LAPTOP------------------- */
+/* -------------------------MENULAP------------------- */
+.menulap{
+    position: relative;
+}
+.lap{
+    display: inline-block;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 5px 20px;
+    margin-top: 30px;
+}
+.laps{
+    display: inline-block;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 5px 20px;
+    margin-top: 5px;
+}
+.menulaps{
+    background-color: black;
+    height: 150px;
+}
+/* -----------------------------LAPTOPGAMING------------------- */
+.lapgaming{
+    margin-top: 20px;
+}
+.lapgaming li{
+    list-style: none;
+}
+.khunglap{
+    background-color: #25304b;
+    padding: 12px;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+.khungpk{
+    padding: 12px;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+.khunghinhlap{
+    display: flex;
+    justify-content: space-evenly;
+}
+.hinhanhlap{
+    width: 19%;
+    background-color: white;
+    padding: 50px 12px 12px;
+}
+.hinhanhlap> a img{
+    width: 100%;
+    transition: all 0.4s ease;
+    padding-bottom: 20px;
+}
+.hinhanhlap li{
+    list-style: none;
+    margin-bottom: 6px;
+}
+.hinhanhlap:hover > a img{
+    transform:translateY(-20px) ;
+}
+.hinhanhlap li:nth-child(2):hover{
+    color: blue;
+}
+.hinhanhlap li i{
+    color: #fb6e2e;
+    font-size: 13px;
+}
+.lapgaming a:last-child{
+    background: linear-gradient(92.4deg,#ffd400 0%,#febf00 100%);
+    box-shadow: 0 0 20px #b88a00;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 4px;
+    color: #333;
+    display: block;
+    line-height: 18px;
+    margin: 20px auto 0;
+    max-width: 350px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;  
+    font-size: 13px;
+}
+/* ---------------------MACBOOK----------------------- */
+.khungmac{
+    background-color: rgb(234,234,234);
+    padding: 12px;
+    cursor: pointer;
+    padding-bottom: 12px;
+}
+/* -----------------------PHỤ KIỆN---------------- */
+/* -----------------------MENU PHỤ KIỆN------------- */
+.listphukien {
+    height: auto;
+    padding: 20px 0;
+    margin: auto;
+    display: flex;
+}
+.listphukienitem{
+    vertical-align: text-top;
+    color: #333;
+    text-transform: unset;  
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;  
+}
+.listphukien h3{
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 16px;
+    padding-top: 20px;
+}
+.pk{
+    vertical-align: text-top;
+    color: #333;
+    text-transform: unset;
+    text-align: center;
+    width: auto;
+    display: inline-block;
+    margin-right: 30px;
+}
+.listphukien .pk:last-child{
+    margin-right: 0;
+}
+.pk a{
+    position: relative;
+    border-radius: 50%;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    display: block;
+    max-width: 100%;
+
+}
+.pk a img{
+    height: 64px;
+    width: 64px;
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+.pk h3{
+    display: block;
+    font-size: 14px;
+}
+.pk:nth-child(1) a {
+    background: linear-gradient(90deg,#6ac1ff 0%,#8bfffe 100%);
+}
+
+.pk:nth-child(2) a {
+    background: linear-gradient(90deg,#ff8ca1 0%,#ffd0d0 100%);
+}
+.pk:nth-child(3) a {
+    background: linear-gradient(90deg,#f8d383 0%,#ffbf83 100%);
+}
+.pk:nth-child(4) a {
+    background: linear-gradient(90deg,#ede574 0%,#e1f5c4 100%);
+}
+.pk:nth-child(5) a {
+    background: linear-gradient(135deg,#f5ee27 14.65%,#f4b43f 85.36%);
+}
+.pk:nth-child(6) a {
+    background: linear-gradient(135deg,#f5ee27 14.65%,#8bc34a 85.36%);
+}
+.pk:nth-child(7) a {
+    background: linear-gradient(135deg,#ffd740 14.65%,#e040bd 85.36%);
+}
+.pk:nth-child(8) a {
+    background: linear-gradient(90deg,#9ce8fb 0%,#b4ffe4 100%);
+}
+.pk:nth-child(9) a {
+    background: linear-gradient(143.24deg,#ffd772 14.65%,#f3a618 71.95%);
+}
+.pk:nth-child(10) a {
+    background: linear-gradient(135deg,#377ef4 14.65%,#cd48e3 85.36%);
+}
+/* ------------------------ĐỒNG HÔ THÔNG MINH------------------- */
+.dealdongho{
+    background-color: #fb6e2e;
+    background-position: top right,bottom left;
+    background-size: 369px 350px;
+    background-repeat: no-repeat;
+    padding: 15px 10px 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.dealtile{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
+    margin-bottom: 20px; 
+}
+.dealtile span{
+    color: #ffe500;
+}
+/* ----------------------DEAL AVAJI------------------- */
+.dealavaji{
+    padding: 1px 0 73px;
+    background-color: #7e0d09;
+}
+/* -----------------------PC,MÁY IN----------------------- */
+.menupc{
+    vertical-align: text-top;
+    color: #333;
+    text-transform: unset;  
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;  
+}
+.pclist{
+    vertical-align: text-top;
+    text-transform: unset;
+    text-align: center;
+    width: auto;
+    display: inline-block;
+    margin-right: 30px;
+}
+.pclist a{
+    position: relative;
+    border-radius: 50%;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    display: block;
+    max-width: 100%;
+
+}
+.pclist a img{
+    height: 64px;
+    width: 64px;
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.menupc p{
+    font-size: 14px;
+}
